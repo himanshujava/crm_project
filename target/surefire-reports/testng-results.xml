@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="parallelTest" duration-ms="171368" started-at="2020-04-14T19:37:03Z" finished-at="2020-04-14T19:39:54Z">
+    <groups>
+    </groups>
+    <test name="parallel" duration-ms="171368" started-at="2020-04-14T19:37:03Z" finished-at="2020-04-14T19:39:54Z">
+      <class name="testScripts.dealPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.dealPage@de3a06f]" name="setup" is-config="true" duration-ms="71170" started-at="2020-04-15T01:07:03Z" finished-at="2020-04-15T01:08:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createDeal()[pri:0, instance:testScripts.dealPage@de3a06f]" name="createDeal" duration-ms="7171" started-at="2020-04-15T01:08:14Z" finished-at="2020-04-15T01:08:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDeal -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testScripts.dealPage@de3a06f]" name="teardown" is-config="true" duration-ms="939" started-at="2020-04-15T01:08:21Z" finished-at="2020-04-15T01:08:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.dealPage -->
+      <class name="testScripts.titleTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.titleTest@2bea5ab4]" name="setup" is-config="true" duration-ms="33057" started-at="2020-04-15T01:08:22Z" finished-at="2020-04-15T01:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="titletest()[pri:0, instance:testScripts.titleTest@2bea5ab4]" name="titletest" duration-ms="17" started-at="2020-04-15T01:08:55Z" finished-at="2020-04-15T01:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titletest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testScripts.titleTest@2bea5ab4]" name="teardown" is-config="true" duration-ms="1285" started-at="2020-04-15T01:08:55Z" finished-at="2020-04-15T01:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.titleTest@2bea5ab4]" name="setup" is-config="true" duration-ms="44172" started-at="2020-04-15T01:08:56Z" finished-at="2020-04-15T01:09:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="links()[pri:1, instance:testScripts.titleTest@2bea5ab4]" name="links" duration-ms="2021" started-at="2020-04-15T01:09:41Z" finished-at="2020-04-15T01:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- links -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testScripts.titleTest@2bea5ab4]" name="teardown" is-config="true" duration-ms="768" started-at="2020-04-15T01:09:43Z" finished-at="2020-04-15T01:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.titleTest -->
+      <class name="testScripts.tasksPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.tasksPage@76b10754]" name="setup" is-config="true" duration-ms="26050" started-at="2020-04-15T01:08:20Z" finished-at="2020-04-15T01:08:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createTasksPage()[pri:0, instance:testScripts.tasksPage@76b10754]" name="createTasksPage" duration-ms="66984" started-at="2020-04-15T01:08:46Z" finished-at="2020-04-15T01:09:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testScripts.tasksPage.createTasksPage(tasksPage.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTasksPage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testScripts.tasksPage@76b10754]" name="teardown" is-config="true" duration-ms="677" started-at="2020-04-15T01:09:53Z" finished-at="2020-04-15T01:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.tasksPage -->
+      <class name="testScripts.contacts">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.contacts@6c9f5c0d]" name="setup" is-config="true" duration-ms="71263" started-at="2020-04-15T01:07:03Z" finished-at="2020-04-15T01:08:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addContacts()[pri:0, instance:testScripts.contacts@6c9f5c0d]" name="addContacts" duration-ms="4988" started-at="2020-04-15T01:08:14Z" finished-at="2020-04-15T01:08:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContacts -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testScripts.contacts@6c9f5c0d]" name="teardown" is-config="true" duration-ms="1004" started-at="2020-04-15T01:08:19Z" finished-at="2020-04-15T01:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testScripts.contacts -->
+    </test> <!-- parallel -->
+  </suite> <!-- parallelTest -->
+</testng-results>
