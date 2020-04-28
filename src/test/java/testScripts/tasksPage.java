@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -67,6 +68,12 @@ public class tasksPage {
 		String childWindowId = it.next();
 		System.out.println("child window id:"+childWindowId);
 		
+        WebElement date= driver.findElement(By.xpath("//input[@name='deadline']"));
+		
+		String dateValue= "30-04-2020";
+		
+		selectDateByJS(driver, date, dateValue);
+		
 		driver.switchTo().window(childWindowId);
 		driver.findElement(By.xpath("//input[@name='search']")).sendKeys("deal");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
@@ -74,10 +81,23 @@ public class tasksPage {
 		System.out.println(valuetext);
 		driver.close();
 		
-		driver.switchTo().window(parentWindowId);
-		driver.findElement(By.xpath("//*[@id=\"taskForm\"]/table/tbody/tr[1]/td/input")).click();
+		//driver.switchTo().window(parentWindowId);
+		//driver.findElement(By.xpath("//*[@id=\"taskForm\"]/table/tbody/tr[1]/td/input")).click();
 		
 	}
+	
+	
+public static void selectDateByJS(WebDriver driver, WebElement element, String dateValue) {
+		
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].setAttribute('value','"+dateValue+"');", element);
+		
+		
+	}
+	
+	
+	
+	
 	
 
 	@AfterMethod

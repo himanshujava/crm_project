@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="26.935" tests="5" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="116.294" tests="9" errors="0" skipped="4" failures="5">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Apk file\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Apk file\apache-maven-3.6.3\bin\;?C:\Apk file\apache-maven-3.6.3\\bin;C:\Apk file\apache-maven-3.6.3\;C:\Program Files\Java\jre1.8.0_241\bin;C:\Program Files\Java\jdk1.8.0_231;C:\Program Files\Java\jdk1.8.0_231\lib;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\91883\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.1\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Apk file\apache-maven-3.6.3\bin\;?C:\Apk file\apache-maven-3.6.3\\bin;C:\Apk file\apache-maven-3.6.3\;C:\Program Files\Java\jre1.8.0_241\bin;C:\Program Files\Java\jdk1.8.0_231;C:\Program Files\Java\jdk1.8.0_231\lib;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\Git\bin\;C:\Users\91883\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.1\bin;;."/>
     <property name="maven.conf" value="C:\Apk file\apache-maven-3.6.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,13 +64,228 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="addContacts" classname="testScripts.contacts" time="4.989"/>
-  <testcase name="createDeal" classname="testScripts.dealPage" time="7.085"/>
-  <testcase name="titletest" classname="testScripts.titleTest" time="0.018"/>
-  <testcase name="links" classname="testScripts.titleTest" time="2.021"/>
-  <testcase name="createTasksPage" classname="testScripts.tasksPage" time="12.822">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at testScripts.tasksPage.createTasksPage(tasksPage.java:78)
+  <testcase name="createDeal" classname="testScripts.dealPage" time="3.954">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=80.0.3987.163)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-57DPU0C&apos;, ip: &apos;192.168.43.47&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 68d5290516992a350a8cb466c8961ed6&#10;*** Element info: {Using=css selector, value=frame[name=&apos;mainpanel&apos;],iframe[name=&apos;mainpanel&apos;]}" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-57DPU0C', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68d5290516992a350a8cb466c8961ed6
+*** Element info: {Using=css selector, value=frame[name='mainpanel'],iframe[name='mainpanel']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:874)
+	at testScripts.dealPage.createDeal(dealPage.java:41)
 </failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+]]></system-out>
+    <system-err><![CDATA[SSttarting ChraormeDrtiiver 79.0.3945.36 (3582db3n2g ChromeDriver 79.0.3945.36 (3582db32bb3389386393b889c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 10548
+Only local connections are allowed.
+Please 3protect8 ports u6sed 9b8c1339e8f4d9ebdy1 8C1h6rfomeDriver and related test frameworks to prevent access by malicious code.
+143-refs/branch-heads/3945@{#614}) on port 13809
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[[1587034773.125][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+1587034773.125][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1587034777.034][WARNING]: Timed out connecting to Chrome, retrying...
+[1587034778.264][WARNING]: Timed out connecting to Chrome, retrying...
+[1587034781.037][WARNING]: Timed out connecting to Chrome, retrying...
+[1587034782.266][WARNING]: Timed out connecting to Chrome, retrying...
+Apr 16, 2020 4:30:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 16, 2020 4:30:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="testScripts.contacts" time="30.525">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=80.0.3987.163)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-57DPU0C&apos;, ip: &apos;192.168.43.47&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 86bac845e037f69d091a4daebaf4cc1f&#10;*** Element info: {Using=name, value=password}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-57DPU0C', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86bac845e037f69d091a4daebaf4cc1f
+*** Element info: {Using=name, value=password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testScripts.contacts.setup(contacts.java:33)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 8312
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1587034994.261][WARNING]: Timed out connecting to Chrome, retrying...
+[1587034997.272][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1587034998.264][WARNING]: Timed out connecting to Chrome, retrying...
+[1587034999.304][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="testScripts.tasksPage" time="30.675">
+    <failure message="session not created&#10;from chrome not reachable&#10;  (Session info: chrome=80.0.3987.163)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-57DPU0C&apos;, ip: &apos;192.168.43.47&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x010FA113+1548563]&#10;	Ordinal0 [0x0107DDA1+1039777]&#10;	Ordinal0 [0x00FFE32E+516910]&#10;	Ordinal0 [0x00FF8012+491538]&#10;	Ordinal0 [0x00FF8ADD+494301]&#10;	Ordinal0 [0x00FF9855+497749]&#10;	Ordinal0 [0x00FF5885+481413]&#10;	Ordinal0 [0x00FFF0D0+520400]&#10;	Ordinal0 [0x00FAC030+180272]&#10;	Ordinal0 [0x00FAB59D+177565]&#10;	Ordinal0 [0x00FA95FB+169467]&#10;	Ordinal0 [0x00F9160A+71178]&#10;	Ordinal0 [0x00F92690+75408]&#10;	Ordinal0 [0x00F92629+75305]&#10;	Ordinal0 [0x010971B7+1143223]&#10;	GetHandleVerifier [0x01192B46+507814]&#10;	GetHandleVerifier [0x01192864+507076]&#10;	GetHandleVerifier [0x01199F47+537511]&#10;	GetHandleVerifier [0x01193402+510050]&#10;	Ordinal0 [0x0108F29C+1110684]&#10;	Ordinal0 [0x0109938B+1151883]&#10;	Ordinal0 [0x010994F3+1152243]&#10;	Ordinal0 [0x010983F5+1147893]&#10;	BaseThreadInitThunk [0x77706359+25]&#10;	RtlGetAppContainerNamedObjectPath [0x778C7B74+228]&#10;	RtlGetAppContainerNamedObjectPath [0x778C7B44+180]&#10;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-57DPU0C', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x010FA113+1548563]
+	Ordinal0 [0x0107DDA1+1039777]
+	Ordinal0 [0x00FFE32E+516910]
+	Ordinal0 [0x00FF8012+491538]
+	Ordinal0 [0x00FF8ADD+494301]
+	Ordinal0 [0x00FF9855+497749]
+	Ordinal0 [0x00FF5885+481413]
+	Ordinal0 [0x00FFF0D0+520400]
+	Ordinal0 [0x00FAC030+180272]
+	Ordinal0 [0x00FAB59D+177565]
+	Ordinal0 [0x00FA95FB+169467]
+	Ordinal0 [0x00F9160A+71178]
+	Ordinal0 [0x00F92690+75408]
+	Ordinal0 [0x00F92629+75305]
+	Ordinal0 [0x010971B7+1143223]
+	GetHandleVerifier [0x01192B46+507814]
+	GetHandleVerifier [0x01192864+507076]
+	GetHandleVerifier [0x01199F47+537511]
+	GetHandleVerifier [0x01193402+510050]
+	Ordinal0 [0x0108F29C+1110684]
+	Ordinal0 [0x0109938B+1151883]
+	Ordinal0 [0x010994F3+1152243]
+	Ordinal0 [0x010983F5+1147893]
+	BaseThreadInitThunk [0x77706359+25]
+	RtlGetAppContainerNamedObjectPath [0x778C7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x778C7B44+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at testScripts.tasksPage.setup(tasksPage.java:27)
+]]></failure>
+  </testcase>
+  <testcase name="createTasksPage" classname="testScripts.tasksPage" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addContacts" classname="testScripts.contacts" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setup" classname="testScripts.titleTest" time="51.14">
+    <failure message="unknown error: cannot determine loading status&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=80.0.3987.163)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-57DPU0C&apos;, ip: &apos;192.168.43.47&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b986c600827a4b1e162365aa504bcf8c" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-57DPU0C', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b986c600827a4b1e162365aa504bcf8c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at testScripts.titleTest.setup(titleTest.java:24)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 34773
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 3759
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1587035010.907][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1587035013.994][WARNING]: Timed out connecting to Chrome, retrying...
+[1587035014.158][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1587035016.183][WARNING]: Timed out connecting to Chrome, retrying...
+Apr 16, 2020 4:33:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 16, 2020 4:33:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="testScripts.titleTest" time="68.632">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=80.0.3987.163)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-57DPU0C&apos;, ip: &apos;192.168.43.47&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b986c600827a4b1e162365aa504bcf8c&#10;*** Element info: {Using=xpath, value=//a}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-57DPU0C', ip: '192.168.43.47', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\91883\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b986c600827a4b1e162365aa504bcf8c
+*** Element info: {Using=xpath, value=//a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at testScripts.titleTest.setup(titleTest.java:26)
+</failure>
+    <system-err><![CDATA[[1587035032.376][WARNING]: Timed out connecting to Chrome, retrying...
+[1587035036.377][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="links" classname="testScripts.titleTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="titletest" classname="testScripts.titleTest" time="0">
+    <skipped/>
   </testcase>
 </testsuite>
